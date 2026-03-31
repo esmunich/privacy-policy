@@ -1,247 +1,275 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy – ESM Vertretungsplan</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – ESM Vertretungsplan</title>
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-```
-:root {
-  --bg: #f5f3ee;
-  --surface: #ffffff;
-  --accent: #1a3a6b;
-  --accent-light: #e8eef7;
-  --text: #1c1c1e;
-  --muted: #6b6b72;
-  --border: #dddbd5;
-  --serif: 'DM Serif Display', Georgia, serif;
-  --sans: 'DM Sans', system-ui, sans-serif;
+html {
+  font-size: 16px;
 }
 
 body {
-  font-family: var(--sans);
-  background: var(--bg);
-  color: var(--text);
-  font-size: 16px;
-  line-height: 1.7;
-  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #f4f2ed;
+  color: #1c1c1e;
+  line-height: 1.75;
 }
 
-header {
-  background: var(--accent);
-  color: white;
-  padding: 3.5rem 2rem 3rem;
+/* HEADER */
+.header {
+  background-color: #1a3a6b;
+  color: #ffffff;
+  padding: 56px 24px 48px;
   text-align: center;
 }
 
-.badge {
+.header-badge {
   display: inline-block;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.3);
-  color: rgba(255,255,255,0.85);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.8);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.3rem 0.85rem;
-  border-radius: 2rem;
-  margin-bottom: 1.2rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
 }
 
-header h1 {
-  font-family: var(--serif);
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.5rem;
+.header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
 }
 
-header p {
-  color: rgba(255,255,255,0.7);
-  font-size: 0.9rem;
-  font-weight: 300;
+.header-sub {
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
 }
 
+/* MAIN */
 main {
-  max-width: 780px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 5rem;
+  padding: 48px 24px 80px;
 }
 
+/* INTRO BOX */
 .intro-box {
-  background: var(--accent-light);
-  border-left: 3px solid var(--accent);
+  background-color: #e8eef7;
+  border-left: 4px solid #1a3a6b;
+  padding: 16px 20px;
   border-radius: 0 8px 8px 0;
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 3rem;
-  font-size: 0.95rem;
-  color: var(--accent);
+  margin-bottom: 48px;
+  font-size: 15px;
+  color: #1a3a6b;
 }
 
-section {
-  margin-bottom: 2.8rem;
+/* DIVIDER */
+.divider {
+  border: none;
+  border-top: 1px solid #dddbd5;
+  margin: 40px 0;
 }
 
-.section-number {
-  font-size: 0.72rem;
-  font-weight: 500;
+/* SECTION */
+.section {
+  margin-bottom: 40px;
+}
+
+.section-num {
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.4rem;
+  color: #1a3a6b;
+  margin-bottom: 6px;
 }
 
-h2 {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  color: var(--text);
+.section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #1c1c1e;
 }
 
 p {
-  color: var(--text);
-  margin-bottom: 0.9rem;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #1c1c1e;
 }
 
-p:last-child { margin-bottom: 0; }
+p:last-child {
+  margin-bottom: 0;
+}
 
+/* LISTS */
 ul {
   list-style: none;
-  margin: 0.6rem 0 0.9rem;
+  margin: 8px 0 12px;
   padding: 0;
 }
 
 ul li {
-  padding: 0.35rem 0 0.35rem 1.4rem;
   position: relative;
-  color: var(--text);
-  border-bottom: 1px solid var(--border);
-  font-size: 0.95rem;
+  padding: 8px 0 8px 22px;
+  font-size: 15px;
+  border-bottom: 1px solid #dddbd5;
+  color: #1c1c1e;
 }
 
-ul li:last-child { border-bottom: none; }
+ul li:last-child {
+  border-bottom: none;
+}
 
 ul li::before {
-  content: '→';
+  content: "\2192";
   position: absolute;
   left: 0;
-  color: var(--accent);
-  font-size: 0.85rem;
+  color: #1a3a6b;
+  font-size: 13px;
+  top: 9px;
 }
 
+/* CARDS */
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background-color: #ffffff;
+  border: 1px solid #dddbd5;
   border-radius: 10px;
-  padding: 1.4rem 1.6rem;
-  margin-top: 1rem;
+  padding: 18px 22px;
+  margin-top: 12px;
 }
 
-.card-title {
-  font-weight: 500;
-  font-size: 0.9rem;
+.card-label {
+  font-size: 11px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--muted);
-  margin-bottom: 0.6rem;
+  letter-spacing: 0.08em;
+  color: #6b6b72;
+  margin-bottom: 10px;
 }
 
-.third-party {
+/* THIRD PARTY GRID */
+.third-party-grid {
   display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 12px;
+  margin-top: 14px;
 }
 
-.third-party-item {
-  background: var(--surface);
-  border: 1px solid var(--border);
+.tp-item {
+  background-color: #ffffff;
+  border: 1px solid #dddbd5;
   border-radius: 10px;
-  padding: 1rem 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  padding: 14px 18px;
 }
 
-.third-party-item strong {
-  font-size: 0.95rem;
-  color: var(--text);
+.tp-item strong {
+  display: block;
+  font-size: 15px;
+  color: #1c1c1e;
+  margin-bottom: 4px;
 }
 
-.third-party-item span {
-  font-size: 0.87rem;
-  color: var(--muted);
+.tp-item span {
+  display: block;
+  font-size: 14px;
+  color: #6b6b72;
+  margin-bottom: 6px;
 }
 
-.third-party-item a {
-  font-size: 0.82rem;
-  color: var(--accent);
+.tp-item a {
+  font-size: 13px;
+  color: #1a3a6b;
   text-decoration: none;
 }
 
-.third-party-item a:hover { text-decoration: underline; }
+.tp-item a:hover {
+  text-decoration: underline;
+}
 
+/* RIGHTS GRID */
 .rights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 0.8rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .right-item {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background-color: #ffffff;
+  border: 1px solid #dddbd5;
   border-radius: 8px;
-  padding: 0.9rem 1.1rem;
-  font-size: 0.9rem;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #1c1c1e;
 }
 
 .right-item strong {
   display: block;
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-  font-size: 0.85rem;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1a3a6b;
+  margin-bottom: 4px;
 }
 
+/* CONTACT BOX */
 .contact-box {
-  background: var(--accent);
-  color: white;
+  background-color: #1a3a6b;
+  color: #ffffff;
   border-radius: 12px;
-  padding: 2rem;
-  margin-top: 1rem;
+  padding: 24px 28px;
+  margin-top: 14px;
 }
 
-.contact-box p { color: rgba(255,255,255,0.8); margin-bottom: 0.5rem; }
-.contact-box a { color: white; font-weight: 500; }
-
-.divider {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+.contact-box p {
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 6px;
+  font-size: 15px;
 }
 
+.contact-box a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.muted {
+  font-size: 14px;
+  color: #6b6b72;
+  margin-top: 14px;
+}
+
+.muted a {
+  color: #1a3a6b;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 2rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
+  padding: 24px;
+  font-size: 13px;
+  color: #6b6b72;
+  border-top: 1px solid #dddbd5;
 }
-```
-
-  </style>
+</style>
 </head>
 <body>
 
-<header>
-  <div class="badge">Legal</div>
+<div class="header">
+  <div class="header-badge">Legal</div>
   <h1>Privacy Policy</h1>
-  <p>ESM Vertretungsplan &nbsp;·&nbsp; Effective date: 25 March 2026</p>
-</header>
+  <p class="header-sub">ESM Vertretungsplan &nbsp;&middot;&nbsp; Effective date: 25 March 2026</p>
+</div>
 
 <main>
 
@@ -249,137 +277,129 @@ footer {
     This app is an unofficial student and teacher tool for the European School Munich. It displays timetable and substitution (Vertretungsplan) data from the school's official systems. We are committed to handling your data minimally and transparently.
   </div>
 
-  <!-- 1 -->
-
-  <section>
-    <div class="section-number">01</div>
+  <!-- 01 -->
+  <div class="section">
+    <div class="section-num">01</div>
     <h2>Who We Are</h2>
-    <p>ESM Vertretungsplan is an independently developed application and is not an official product of the Europäische Schule München or MySchool Ltd. For questions about this privacy policy, please contact us at the address listed in section 9.</p>
+    <p>ESM Vertretungsplan is an independently developed application and is not an official product of the Europ&#228;ische Schule M&#252;nchen or MySchool Ltd. For questions about this privacy policy, please contact us at the address listed in section 09.</p>
     <p>For the purposes of the GDPR, the developer of ESM Vertretungsplan acts as the data controller for any personal data processed within the app itself.</p>
-  </section>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 2 -->
-
-  <section>
-    <div class="section-number">02</div>
+  <!-- 02 -->
+  <div class="section">
+    <div class="section-num">02</div>
     <h2>What Data We Handle</h2>
     <p>The app processes the following categories of data:</p>
     <div class="card">
-      <div class="card-title">Stored on your device only</div>
+      <div class="card-label">Stored on your device only</div>
       <ul>
         <li>Your O365 / SMS login credentials (username and password), stored in your device's secure encrypted storage (iOS Keychain / Android Keystore)</li>
         <li>Authentication tokens returned by the O365 / SMS login service after a successful sign-in</li>
         <li>Cached timetable and substitution data for offline access</li>
       </ul>
     </div>
-    <div class="card" style="margin-top:0.8rem;">
-      <div class="card-title">Transmitted to third-party services</div>
+    <div class="card">
+      <div class="card-label">Transmitted to third-party services</div>
       <ul>
         <li>Anonymised crash reports and app diagnostics (via Firebase Crashlytics)</li>
         <li>Anonymised usage analytics such as screen views and feature interactions (via Firebase Analytics)</li>
-        <li>Device push notification tokens, once push notifications are enabled (via Firebase Cloud Messaging — in development)</li>
+        <li>Device push notification tokens, once push notifications are enabled (via Firebase Cloud Messaging &#8212; in development)</li>
       </ul>
     </div>
-    <p style="margin-top:1rem; font-size:0.9rem; color: var(--muted);">We do not collect your name, email address, or any other personal details independently. We do not run our own backend server. All school data is fetched directly from ESM and SMS systems using your own credentials.</p>
-  </section>
+    <p class="muted">We do not collect your name, email address, or any other personal details independently. We do not run our own backend server. All school data is fetched directly from ESM and SMS systems using your own credentials.</p>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 3 -->
-
-  <section>
-    <div class="section-number">03</div>
+  <!-- 03 -->
+  <div class="section">
+    <div class="section-num">03</div>
     <h2>How We Use Your Data</h2>
     <ul>
-      <li><strong>Credentials & tokens</strong> — solely to authenticate you with the O365 / SMS services and retrieve your timetable and substitution data</li>
-      <li><strong>Cached school data</strong> — to display your timetable and Vertretungsplan when offline or between refreshes</li>
-      <li><strong>Crash reports</strong> — to identify and fix bugs, improving app stability</li>
-      <li><strong>Usage analytics</strong> — to understand which features are used, so we can improve the app</li>
-      <li><strong>Push tokens (future)</strong> — to deliver substitution change notifications to your device</li>
+      <li><strong>Credentials &amp; tokens</strong> &#8212; solely to authenticate you with the O365 / SMS services and retrieve your timetable and substitution data</li>
+      <li><strong>Cached school data</strong> &#8212; to display your timetable and Vertretungsplan when offline or between refreshes</li>
+      <li><strong>Crash reports</strong> &#8212; to identify and fix bugs, improving app stability</li>
+      <li><strong>Usage analytics</strong> &#8212; to understand which features are used, so we can improve the app</li>
+      <li><strong>Push tokens (future)</strong> &#8212; to deliver substitution change notifications to your device</li>
     </ul>
     <p>We do not use your data for advertising, profiling, or any commercial purpose.</p>
-  </section>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 4 -->
-
-  <section>
-    <div class="section-number">04</div>
+  <!-- 04 -->
+  <div class="section">
+    <div class="section-num">04</div>
     <h2>Legal Basis (GDPR)</h2>
     <p>We process your data on the following legal bases under Article 6 GDPR:</p>
     <ul>
-      <li><strong>Art. 6(1)(b)</strong> — Performance of a service: credential storage and data fetching are strictly necessary to provide the app's core functionality</li>
-      <li><strong>Art. 6(1)(a)</strong> — Consent: analytics and crash reporting, which you can opt out of in the app's settings</li>
+      <li><strong>Art. 6(1)(b)</strong> &#8212; Performance of a service: credential storage and data fetching are strictly necessary to provide the app's core functionality</li>
+      <li><strong>Art. 6(1)(a)</strong> &#8212; Consent: analytics and crash reporting, which you can opt out of in the app's settings</li>
     </ul>
-  </section>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 5 -->
-
-  <section>
-    <div class="section-number">05</div>
+  <!-- 05 -->
+  <div class="section">
+    <div class="section-num">05</div>
     <h2>Third-Party Services</h2>
-    <p>The app integrates the following third-party services operated by Google LLC. Google acts as a data processor under a Data Processing Agreement. Their servers may be located outside the EEA; Google relies on Standard Contractual Clauses for international transfers.</p>
-    <div class="third-party">
-      <div class="third-party-item">
+    <p>The app integrates the following third-party services. Google LLC acts as a data processor under a Data Processing Agreement. Their servers may be located outside the EEA; Google relies on Standard Contractual Clauses for international transfers.</p>
+    <div class="third-party-grid">
+      <div class="tp-item">
         <strong>Firebase Crashlytics</strong>
         <span>Collects anonymised crash reports and diagnostic information to help us fix bugs.</span>
-        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy →</a>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
       </div>
-      <div class="third-party-item">
+      <div class="tp-item">
         <strong>Firebase Analytics</strong>
         <span>Collects anonymised usage data (screen views, events). No personally identifiable information is sent.</span>
-        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy →</a>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
       </div>
-      <div class="third-party-item">
+      <div class="tp-item">
         <strong>Firebase Cloud Messaging (in development)</strong>
         <span>Will be used to deliver push notifications about substitution changes. Requires storing a device token on Google's servers.</span>
-        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy →</a>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
       </div>
-      <div class="third-party-item">
+      <div class="tp-item">
         <strong>Microsoft O365 / SMS (sms.eursc.eu)</strong>
-        <span>Your credentials are submitted directly to Microsoft and MySchool's authentication endpoints. We never see or intercept your password in transit — it goes directly from the app to their servers over HTTPS.</span>
-        <a href="https://privacy.microsoft.com" target="_blank">privacy.microsoft.com →</a>
+        <span>Your credentials are submitted directly to Microsoft and MySchool's authentication endpoints over HTTPS. We never see or intercept your password in transit.</span>
+        <a href="https://privacy.microsoft.com" target="_blank">privacy.microsoft.com</a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 6 -->
-
-  <section>
-    <div class="section-number">06</div>
+  <!-- 06 -->
+  <div class="section">
+    <div class="section-num">06</div>
     <h2>Data Retention</h2>
     <ul>
-      <li><strong>Credentials & tokens</strong> — retained on your device until you log out or uninstall the app</li>
-      <li><strong>Cached school data</strong> — retained on your device and refreshed regularly; cleared on logout or uninstall</li>
-      <li><strong>Crash & analytics data</strong> — retained by Google/Firebase per their own retention policies (typically 90 days for Crashlytics, 14 months for Analytics)</li>
+      <li><strong>Credentials &amp; tokens</strong> &#8212; retained on your device until you log out or uninstall the app</li>
+      <li><strong>Cached school data</strong> &#8212; retained on your device and refreshed regularly; cleared on logout or uninstall</li>
+      <li><strong>Crash &amp; analytics data</strong> &#8212; retained by Google/Firebase per their own retention policies (typically 90 days for Crashlytics, 14 months for Analytics)</li>
     </ul>
     <p>We have no server-side database, so there is no user data for us to delete upon request beyond what is held on your device or within Firebase.</p>
-  </section>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 7 -->
-
-  <section>
-    <div class="section-number">07</div>
-    <h2>Children & Minors</h2>
+  <!-- 07 -->
+  <div class="section">
+    <div class="section-num">07</div>
+    <h2>Children &amp; Minors</h2>
     <p>The app is intended for use by students and teachers of the European School Munich. Because the school serves students under the age of 18, we are particularly mindful of data minimisation. The app does not collect any personal data beyond what is strictly necessary for authentication and core functionality. Analytics data sent to Firebase is anonymised and does not include names, email addresses, or school-specific identifiers.</p>
-    <p>If you are a parent or guardian and have concerns about your child's use of the app, please contact us using the details in section 9.</p>
-  </section>
+    <p>If you are a parent or guardian and have concerns about your child's use of the app, please contact us using the details in section 09.</p>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 8 -->
-
-  <section>
-    <div class="section-number">08</div>
+  <!-- 08 -->
+  <div class="section">
+    <div class="section-num">08</div>
     <h2>Your Rights</h2>
     <p>Under the GDPR you have the following rights regarding your personal data:</p>
     <div class="rights-grid">
@@ -389,34 +409,32 @@ footer {
       <div class="right-item"><strong>Restriction</strong>Right to limit how we process your data</div>
       <div class="right-item"><strong>Portability</strong>Right to receive your data in a portable format</div>
       <div class="right-item"><strong>Objection</strong>Right to object to processing based on legitimate interests</div>
-      <div class="right-item"><strong>Withdraw consent</strong>Right to opt out of analytics at any time in app settings</div>
-      <div class="right-item"><strong>Lodge a complaint</strong>Right to contact your national DPA (e.g. BayLDA in Bavaria)</div>
+      <div class="right-item"><strong>Withdraw consent</strong>Opt out of analytics at any time in app settings</div>
+      <div class="right-item"><strong>Lodge a complaint</strong>Contact your national DPA (e.g. BayLDA in Bavaria)</div>
     </div>
-    <p style="margin-top:1rem;">To exercise any of these rights, contact us at the address in section 9. For data held by Firebase/Google or Microsoft, you may need to contact those providers directly.</p>
-  </section>
+    <p style="margin-top:14px;">To exercise any of these rights, contact us at the address in section 09. For data held by Firebase/Google or Microsoft, you may need to contact those providers directly.</p>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
-  <!-- 9 -->
-
-  <section>
-    <div class="section-number">09</div>
+  <!-- 09 -->
+  <div class="section">
+    <div class="section-num">09</div>
     <h2>Contact</h2>
     <p>For any questions, concerns, or rights requests regarding this privacy policy:</p>
     <div class="contact-box">
-      <p>ESM Vertretungsplan — Developer Contact</p>
+      <p>ESM Vertretungsplan &#8212; Developer Contact</p>
       <p>European School Munich (student project)</p>
-      <a href="/cdn-cgi/l/email-protection#d4a4a6bda2b5b7ad94b1a7b9f9a2b1a6a0a6b1a0a1bab3a7a4b8b5bafab5a4a4"><span class="__cf_email__" data-cfemail="2a5a58435c4b49536a4f5947075c4f585e584f5e5f444d595a464b44044b5a5a">[email&#160;protected]</span></a>
+      <a href="mailto:privacy@esm-vertretungsplan.app">privacy@esm-vertretungsplan.app</a>
     </div>
-    <p style="margin-top:1rem; font-size:0.88rem; color:var(--muted);">You also have the right to lodge a complaint with the Bavarian State Office for Data Protection Supervision (BayLDA): <a href="https://www.lda.bayern.de" style="color:var(--accent);">www.lda.bayern.de</a></p>
-  </section>
+    <p class="muted">You also have the right to lodge a complaint with the Bavarian State Office for Data Protection Supervision (BayLDA): <a href="https://www.lda.bayern.de" target="_blank">www.lda.bayern.de</a></p>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
   <!-- 10 -->
-
-  <section>
-    <div class="section-number">10</div>
+  <div class="section">
+    <div class="section-num">10</div>
     <h2>Security &amp; Limitation of Liability</h2>
     <p>Your credentials are stored exclusively in your device's secure encrypted storage (iOS Keychain / Android Keystore) and are never transmitted to or stored on our servers. Authentication requests are sent directly from your device to Microsoft's and MySchool's own servers over HTTPS.</p>
     <p><strong>We have no access to your account credentials or school data at any time.</strong> Because we cannot access, view, or intercept your login information, we cannot be held responsible for:</p>
@@ -424,23 +442,26 @@ footer {
       <li>Unauthorised access to your O365, SMS, or school account</li>
       <li>Compromise of your credentials resulting from device theft, malware, phishing, or breaches at Microsoft's or MySchool's infrastructure</li>
       <li>Actions taken by third parties who gain access to your device or account through means outside this app</li>
-      <li>Data loss or account suspension imposed by the Europäische Schule München or MySchool Ltd</li>
+      <li>Data loss or account suspension imposed by the Europ&#228;ische Schule M&#252;nchen or MySchool Ltd</li>
     </ul>
     <p>If you believe your account has been compromised, please change your O365 password immediately and contact the school's IT department. The security of your account is governed by Microsoft's and MySchool's own terms of service and security practices.</p>
     <p>We implement reasonable technical measures within the app (secure storage, HTTPS-only communication, no server-side credential logging), but we cannot guarantee absolute security of any internet-based system.</p>
-  </section>
+  </div>
 
-  <hr class="divider"/>
+  <hr class="divider">
 
   <!-- 11 -->
-
-  <section>
-    <div class="section-number">11</div>
+  <div class="section">
+    <div class="section-num">11</div>
     <h2>Changes to This Policy</h2>
     <p>We may update this policy as the app gains new features (such as push notifications). When we do, we will update the effective date at the top of this page and, where appropriate, notify users within the app. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-  </section>
+  </div>
 
 </main>
 
 <footer>
-  © 2026 ESM Vertretungsplan &nbsp;·&nb
+  &copy; 2026 ESM Vertretungsplan &nbsp;&middot;&nbsp; This is an unofficial, independently developed app and is not affiliated with the Europ&#228;ische Schule M&#252;nchen or MySchool Ltd.
+</footer>
+
+</body>
+</html>
